@@ -1,7 +1,7 @@
 {
   "name": "letterboxdplus",
   "version": "1.0.0",
-  "description": "",
+  "description": "Film Review site to keep track of what you have watched and wanna watch",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
