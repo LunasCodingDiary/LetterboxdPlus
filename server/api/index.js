@@ -1,21 +1,15 @@
 const router = require("express").Router();
 const usersRoute = require("./users");
-const productsRoute = require("./products");
-const brandsRoute = require("./brands");
-const ordersRoute = require("./orders");
-const cartRoute = require("./cart");
+const filmsRoute = require("./films");
+const directorsRoute = require("./directors");
 const adminRoute = require("./admin");
-const addressRoute = require('./address')
-const stripeRoute = require("./stripe")
+//const addressRoute = require('./address')
 
-router.use("/cart", cartRoute);
-router.use("/products", productsRoute);
+router.use("/films", filmsRoute);
 router.use("/users", usersRoute);
 router.use("/admin", adminRoute);
-router.use("/brands", brandsRoute);
-router.use("/orders", ordersRoute);
-router.use("/address", addressRoute);
-router.use("/stripe", stripeRoute)
+router.use("/directors", directorsRoute);
+
 
 router.use((req, res, next) => {
   const error = new Error("Not Found");

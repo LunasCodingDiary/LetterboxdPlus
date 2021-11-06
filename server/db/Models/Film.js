@@ -2,7 +2,7 @@ const db = require("../db");
 const { STRING, TEXT, ARRAY, INTEGER, DECIMAL } = require("sequelize");
 
 ///////////////// PRODUCT MODEL /////////////////
-const Movie = db.define("movie", {
+const Film = db.define("film", {
   //unique
   tmdb_id: {
     type: STRING,
@@ -138,4 +138,4 @@ const Movie = db.define("movie", {
 });
 
 ///////////////// EXPORTING /////////////////
-module.exports = Movie;
+module.exports = Film;

@@ -1,9 +1,9 @@
 "use strict";
-const movieSeedData = require("./movie-seed-data.json");
+const filmSeedData = require("./film-seed-data.json");
 
 const {
   db,
-  models: { User, Movie, Director, Entry,Tag},
+  models: { User,Film, Director, Entry,Tag},
 } = require("../server/db");
 const Entry = require("../server/db/models/Entry");
 
@@ -40,9 +40,9 @@ async function seed() {
   console.log(`seeded ${users.length} users`);
   console.log(`seeded successfully`);
 
-  // Creating Movies
-  const movies = await Promise.all(
-    movieSeedData.map((movie) => Movie.create(movie))
+  // Creating films
+  const films = await Promise.all(
+    filmSeedData.map((film) => Film.create(film))
   );
  
   // Creating Directors...
@@ -73,21 +73,21 @@ async function seed() {
         "Hayao Miyazaki (宮崎 駿, born 5 January 1941) is a Japanese animator, director, producer, screenwriter, author, and manga artist. A co-founder of Studio Ghibli, he has attained international acclaim as a masterful storyteller and creator of animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation."
     }),
 ]);
-   // Creating Movie/Director Associations...
+   // Creating film/Director Associations...
   directors.forEach((director) =>
-    movies.forEach((movie) => {
-      if (movie.director === director.name) movie.directorId = director.id;
+    films.forEach((film) => {
+      if (film.director === director.name) film.directorId = director.id;
     })
   );
 
   // Saving data..
-  movies.forEach((movie) => movie.save());
+  films.forEach((film) => film.save());
   directors.forEach((director) => director.save());
 
   //Creating entry
   const entry1 = await Entry.create({
     userId: users[0].id,
-    movieId: 5,
+    filmId: 5,
     review: "Not bad!",
     rating: 3.5
   });
