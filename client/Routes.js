@@ -12,7 +12,7 @@ import SingleFilm from "./components/Films/SingleFilm";
 // import Category from "./components/Genres/Genres";
 import Profile from "./components/User/Profile/Profile";
 import Diary from "./components/User/Diary/Table";
-import Watchlist from "./components/User/Watchlist";
+import Watchlist from "./components/User/Watchlist/Table";
 //Admin Functions to be added later 
 // import AdminFilms from "./components/Admin/Films/AdminFilmsTable";
 // import FilmCreateForm from "./components/Admin/Films/FilmCreateForm";
@@ -52,8 +52,8 @@ const Routes = () => {
             <Route exact path="/films" component={Films} />
             <Route path="/films/:filmId" component={SingleFilm} />
             <Route exact path="/profile" component={Profile} />
-            <Route exact path="/diary" component={Diary} />
-            <Route exact path="/watchlist" component={Watchlist} />
+            <Route exact path="/entries/diary" component={Diary} />
+            <Route exact path="/entries/watchlist" component={Watchlist} / >
            
             <Redirect to="/home" />
           </Switch>

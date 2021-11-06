@@ -18,6 +18,10 @@ const Entry = db.define('entry', {
     rating: {
         type: INTEGER,
         allowNull: true
+    },
+    watched_or_not: {
+        type: BOOLEAN,
+        allowNull: false
     }
 
 })
