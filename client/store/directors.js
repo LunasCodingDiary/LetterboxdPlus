@@ -82,7 +82,7 @@ const initialState = [];
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_DIRECTORDIRECTORS:
+    case SET_DIRECTORS:
       return action.directors;
 
     case CREATE_DIRECTOR:

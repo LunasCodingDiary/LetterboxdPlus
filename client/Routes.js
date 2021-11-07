@@ -4,15 +4,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 /////////////////////// COMPONENT AND PAGES  /////////////////////
-import Home from "./components/Home/Home";
+
+import Home from "./components/Home";
 // import Directors from "./components/films/Directors";
 // import Singlefilm from "./components/films/Singlefilm";
-import Films from "./components/Films/Films";
-import SingleFilm from "./components/Films/SingleFilm";
+
+import Films from "./components/Films";
+// import SingleFilm from "./components/SingleFilm";
 // import Category from "./components/Genres/Genres";
-import Profile from "./components/User/Profile/Profile";
-import Diary from "./components/User/Diary/Table";
-import Watchlist from "./components/User/Watchlist/Table";
+
+// to write
+// import Profile from "./components/User/Profile";
+// import Diary from "./components/User/Diary";
+// import Watchlist from "./components/User/Watchlist";
+
+
 //Admin Functions to be added later 
 // import AdminFilms from "./components/Admin/Films/AdminFilmsTable";
 // import FilmCreateForm from "./components/Admin/Films/FilmCreateForm";
@@ -49,12 +55,12 @@ const Routes = () => {
             {/* <Route exact path="/directors" component={directors} />
             <Route path="/directors/:directorId" component={SingleDirector} /> */}
               {/* <Route path="/genre/:genreId" component={Genre} /> */}
-            <Route exact path="/films" component={Films} />
+            {/* <Route exact path="/films" component={Films} />
             <Route path="/films/:filmId" component={SingleFilm} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/entries/diary" component={Diary} />
             <Route exact path="/entries/watchlist" component={Watchlist} / >
-           
+            */}
             <Redirect to="/home" />
           </Switch>
         </>
@@ -65,8 +71,8 @@ const Routes = () => {
             <Route exact path="/" component={Home} />
             {/* <Route exact path="/directors" component={Directors} />
             <Route path="/films/:directorId" component={SingleDirector} /> */}
-            <Route exact path="/Films" component={Films} />
-            <Route path="/Films/:FilmId" component={SingleFilm} />
+            {/* <Route exact path="/Films" component={Films} />
+            <Route path="/Films/:FilmId" component={SingleFilm} /> */}
             {/* <Route path="/genre/:genred" component={Genre} /> */}
           </Switch>
         </>

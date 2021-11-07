@@ -1,4 +1,4 @@
-const { BOOLEAN, INTEGER, STRING, TEXT, DATE } = require('sequelize');
+const { BOOLEAN, DEMICAL, STRING, TEXT, DATE, DECIMAL } = require('sequelize');
 const db = require('../db');
 
 ///////////////// ORDER MODEL /////////////////
@@ -9,19 +9,19 @@ const Entry = db.define('entry', {
     // },
     date:{
         type:DATE,
-        allowNull: false
+        allowNull: true
     },
     review: {
         type: TEXT,
         allowNull: true
     },
     rating: {
-        type: INTEGER,
+        type: DECIMAL,
         allowNull: true
     },
     watched_or_not: {
         type: BOOLEAN,
-        allowNull: false
+        allowNull: true //will change laters
     }
 
 })

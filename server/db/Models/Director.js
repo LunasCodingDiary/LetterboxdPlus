@@ -18,10 +18,7 @@ const Director = db.define("director", {
   },
   country:{
     type: STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    }
+    allowNull: true,
   }
 });
 

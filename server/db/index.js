@@ -30,15 +30,15 @@ Director.hasMany(Film);
 Film.belongsTo(Tag);
 Tag.hasMany(Film);
 
-Film.belongsTo(Keyword);
-Keyword.hasMany(Film);
-Film.hasMany(Keyword);
-Keyword.belongsTo(Film);
+// Film.belongsTo(Keyword);
+// Keyword.hasMany(Film);
+// Film.hasMany(Keyword);
+// Keyword.belongsTo(Film);
 
-Film.belongsTo(Genre);
-Genre.hasMany(Film);
-Film.hasMany(Genre);
-Genre.belongsTo(Film);
+// Film.belongsTo(Genre);
+// Genre.hasMany(Film);
+// Film.hasMany(Genre);
+// Genre.belongsTo(Film);
 
 // User.belongsTo(Tag);
 // Tag.hasMany(User);

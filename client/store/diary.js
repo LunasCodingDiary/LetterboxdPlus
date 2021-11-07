@@ -36,7 +36,7 @@ export const addToDiary = (entryInfo) => async dispatch => {
     // if (token) {
         const { data } = await axios.post('/api/entries', entryInfo)
         dispatch(_addToDiary(data))
-        //window.location.href = data
+       
 }
 
 ////////////////// REDUCER ////////////////////

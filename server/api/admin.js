@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const {models: { Film, User, Diary }} = require("../db");
+const {models: { Film, User, Entry }} = require("../db");
 
 const { isLoggedIn, isAdmin } = require("../middleware");
 const { pluralize } = require("inflection");
@@ -60,10 +60,9 @@ module.exports = router;
 
 //Do three Routes in a more efficient way (dynamic routes)
 const obj = {
-  orders: Order,
-  orderItems: OrderItem,
+  entries: Entry,
   users: User,
-  products: Product,
+  films: Film,
 };
 
 Object.entries(obj).forEach((entry) => {

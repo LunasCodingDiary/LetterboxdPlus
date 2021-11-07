@@ -5,7 +5,6 @@ const {
   db,
   models: { User,Film, Director, Entry,Tag},
 } = require("../server/db");
-const Entry = require("../server/db/models/Entry");
 
 //for images/avatar
 const path = require("path");
@@ -41,9 +40,11 @@ async function seed() {
   console.log(`seeded successfully`);
 
   // Creating films
-  const films = await Promise.all(
-    filmSeedData.map((film) => Film.create(film))
-  );
+  console.log(Array.isArray(filmSeedData))
+  const films = []
+  //await Promise.all(
+    // filmSeedData.map((film) => Film.create(film))
+  //);
  
   // Creating Directors...
   const directors = await Promise.all([
@@ -87,7 +88,7 @@ async function seed() {
   //Creating entry
   const entry1 = await Entry.create({
     userId: users[0].id,
-    filmId: 5,
+    // filmId: 5,
     review: "Not bad!",
     rating: 3.5
   });

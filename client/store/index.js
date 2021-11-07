@@ -10,10 +10,10 @@ import directorsReducer from "./directors";
 
 const reducer = combineReducers({
   auth,
-  films: filmsReducer,
-  directors: directorsReducer,
-  userDiary: diaryReducer,
-  userWatchlist: watchlistReducer
+//   films: filmsReducer,
+//   directors: directorsReducer,
+//   userDiary: diaryReducer,
+//   userWatchlist: watchlistReducer
 });
 
 const middleware = composeWithDevTools(

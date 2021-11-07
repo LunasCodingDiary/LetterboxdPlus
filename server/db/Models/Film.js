@@ -65,8 +65,8 @@ const Film = db.define("film", {
   // const horror = await Director.create({ name: 'steven' });
   // const jaw = await Movie.create({ name: 'Jaw', genreId: steven.id });
 
-  director: {
-    type: STRING,
+  directorId: {
+    type: INTEGER,
     allowNull: true
   },
 

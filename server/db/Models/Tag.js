@@ -1,4 +1,4 @@
-const { Tag, STRING } = require("sequelize");
+const {STRING } = require("sequelize");
 
 const db = require("../db");
 

@@ -2,7 +2,7 @@
 const router = require("express").Router();
 
 const { models: { Entry } } = require("../db");
-const Film = require("../db/models/Films");
+const Film = require("../db/models/Film");
 const User = require("../db/models/User");
 const { isLoggedIn } = require("../middleware");
 

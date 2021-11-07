@@ -1,15 +1,15 @@
 const router = require("express").Router();
 const usersRoute = require("./users");
 const filmsRoute = require("./films");
-const directorsRoute = require("./directors");
+//const directorsRoute = require("./directors");
 const adminRoute = require("./admin");
-const entriesRoute = require ("./entry")
+const entriesRoute = require ("./entries")
 //const addressRoute = require('./address')
 
 router.use("/films", filmsRoute);
 router.use("/users", usersRoute);
 router.use("/admin", adminRoute);
-router.use("/directors", directorsRoute);
+//router.use("/directors", directorsRoute);
 router.use("/entries", entriesRoute);
 
 
