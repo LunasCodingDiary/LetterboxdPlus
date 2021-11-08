@@ -5,14 +5,14 @@ Developed by Luna Fang
 
 ## Featured Functionality 
 * Browse Films by Genres and Filmmakers
-* Personalized Content Recommenedation 
+* Simple Content Recommenedation 
 * User Settings 
+* Recent Activity
 
 ## Design Highlights (Implemented with Material UI)
 * Film Cards
 * User's Film Diary formatted as a table
-* Home Page Layout: Recommended films + Favorite Films + Recent Activity
-* Dark/Light Theme
+* Home Page Layout: Recommended films + Favorite Films 
 
 ## Tech Stacks
 * Node
@@ -23,6 +23,6 @@ Developed by Luna Fang
 * Postgres
 * Sequelize
 * Material UI
-* Synaptic.js / Brain.js
-* Node Resque/Redis
+* TMDB API
+* Redis
 
