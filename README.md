@@ -4,7 +4,6 @@ LETTERBOXD PLUS is a clone of the film review website LETTERRBOXD where USERs ca
 Developed by Luna Fang
 
 ## Featured Functionality 
-* Order History 
 * Browse Films by Genres and Filmmakers
 * Personalized Content Recommenedation 
 * User Settings 
