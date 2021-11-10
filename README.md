@@ -1,5 +1,5 @@
 # LETTERBOXD PLUS
-LETTERBOXD PLUS is a clone of the film review website LETTERRBOXD where USERs can mark a film they have watched, like it and comment on it.
+LETTERBOXD PLUS is a clone of the film review website LETTERBOXD where USERs can mark a film they have watched, like it and comment on it.
 
 Developed by Luna Fang
 
